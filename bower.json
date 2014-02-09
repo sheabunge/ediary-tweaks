@@ -1,0 +1,21 @@
+{
+  "name": "ediary-tweaks",
+  "authors": [
+    "Shea Bunge"
+  ],
+  "keywords": [
+    "chrome",
+    "myediary"
+  ],
+  "license": "MIT",
+  "homepage": "http://compex.bungeshea.com",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "open-sans-fontface": "~1.0.4",
+    "font-awesome": "~4.0.3"
+  }
+}

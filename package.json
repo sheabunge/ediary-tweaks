@@ -1,0 +1,34 @@
+{
+  "name": "ediary-tweaks",
+  "version": "0.0.1",
+  "description": "A Google Chrome extension designed to improve the UI of the My EDiary student diary app.",
+  "scripts": {
+    "test": "gulp test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bungeshea/ediary-tweaks"
+  },
+  "keywords": [
+    "chrome",
+    "myediary"
+  ],
+  "author": "Shea Bunge",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bungeshea/ediary-tweaks/issues"
+  },
+  "homepage": "http://compex.bungeshea.com",
+  "devDependencies": {
+    "gulp": "~3.5.2",
+    "gulp-clean": "~0.2.4",
+    "gulp-concat": "~2.1.7",
+    "gulp-sass": "~0.6.0",
+    "gulp-autoprefixer": "0.0.6",
+    "gulp-minify-css": "~0.3.0",
+    "gulp-uglify": "~0.2.0",
+    "gulp-jshint": "~1.4.0",
+    "gulp-rename": "~1.0.0",
+    "gulp-jsonlint": "0.0.3"
+  }
+}
