@@ -11,5 +11,8 @@
 				"css/app.css"
 			]
 		}
+	],
+	"web_accessible_resources": [
+		"fonts/*"
 	]
 }
