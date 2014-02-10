@@ -1,14 +1,3 @@
-$base-path: "chrome-extension://__MSG_@@extension_id__/";
-$OpenSansPath: "#{$base-path}fonts";
-$fa-font-path: "#{$base-path}fonts";
+$base-path: 'chrome-extension://__MSG_@@extension_id__/';
 
-@import '../bower_components/font-awesome/scss/font-awesome.scss';
-@import '../bower_components/open-sans-fontface/open-sans.scss';
-
-* {
-  font-family: "Open Sans", sans-serif;
-}
-
-code, pre {
-	font-family: Menlo, Monaco, "Courier New", monospace;
-}
+@import 'fonts';
