@@ -51,7 +51,7 @@ gulp.task('clean', function() {
 });
 
 // Compile everything
-gulp.task('default', ['clean'], function() {
+gulp.task('default', function() {
 	gulp.start('test', 'styles', 'scripts');
 
 	gulp.src('src/manifest.json').pipe(gulp.dest('dist'));
