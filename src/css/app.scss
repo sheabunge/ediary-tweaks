@@ -2,3 +2,14 @@ $base-path: 'chrome-extension://__MSG_@@extension_id__/';
 
 @import 'fonts';
 @import 'icons';
+@import 'colors';
+
+.brand-small {
+	display: none !important;
+}
+
+.brand {
+	text-transform: none !important;
+	font-weight: bold;
+	padding-top: 20px !important;
+}
