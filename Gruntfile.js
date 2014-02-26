@@ -89,11 +89,9 @@ module.exports = function(grunt) {
 
 		copy: {
 			manifest: {
-				expand: true,
-				cwd: 'src',
-				src: 'manifest.json',
-				dest: 'dist'
-			},
+				src: 'src/manifest.json',
+				dest: 'dist/manifest.json'
+			}
 		},
 
 		bowercopy: {
