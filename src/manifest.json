@@ -11,6 +11,7 @@
 	],
 	"web_accessible_resources": [
 		"css/app.min.css",
+		"js/app.min.map",
 		"fonts/*"
 	]
 }
