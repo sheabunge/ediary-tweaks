@@ -41,11 +41,11 @@ a {
 }
 
 .triangle-border.new_homework {
-	background: $aqua !important;
-	border-color: $aqua !important;
+	background: $aqua;
+	border-color: $aqua;
 
 	&.right:after,
 	&.right:before {
-		border-color: transparent $aqua !important;
+		border-color: transparent $aqua;
 	}
 }
