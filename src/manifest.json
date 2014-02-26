@@ -6,7 +6,7 @@
 	"content_scripts": [
 		{
 			"matches": ["https://*.myediary.com.au/*"],
-			"js": ["js/app.js"]
+			"js": ["js/app.min.js"]
 		}
 	],
 	"web_accessible_resources": [
