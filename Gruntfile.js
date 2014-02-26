@@ -89,18 +89,20 @@ module.exports = function(grunt) {
 		copy: {
 			manifest: {
 				expand: true,
-				cwd: 'src',
-				src: 'manifest.json',
+				src: 'src/manifest.json',
 				dest: 'dist/'
 			},
+		},
+
+		bowercopy: {
 			fonts: {
-				expand: true,
-				cwd: 'bower_components',
-				src: [
-					'font-awesome/fonts/*',
-					'open-sans-fontface/fonts/**/*'
-				],
-				dest: 'dist/fonts',
+				options: {
+					destPrefix: 'dist/fonts'
+				},
+				files: {
+					'font-awesome': 'font-awesome/fonts/*',
+					'open-sans': 'open-sans-fontface/fonts/*'
+				}
 			}
 		}
 
@@ -109,6 +111,7 @@ module.exports = function(grunt) {
 	grunt.registerTask( 'css', ['sass', 'autoprefixer', 'csso'] );
 	grunt.registerTask( 'js', ['concat:js', 'uglify'] );
 	grunt.registerTask( 'test', ['jshint', 'jsonlint'] );
+	grunt.registerTask( 'prep', ['clean', 'copy', 'bowercopy'] );
 
-	grunt.registerTask( 'default', ['test', 'clean', 'copy', 'css', 'js'] );
+	grunt.registerTask( 'default', ['test', 'prep' 'css', 'js'] );
 };
