@@ -95,13 +95,15 @@ module.exports = function(grunt) {
 		},
 
 		bowercopy: {
+			options: {
+				destPrefix: 'dist/'
+			},
 			fonts: {
-				options: {
-					destPrefix: 'dist/fonts'
-				},
 				files: {
-					'font-awesome': 'font-awesome/fonts/*',
-					'open-sans': 'open-sans-fontface/fonts/*'
+					fonts: [
+						'font-awesome/fonts/*',
+						'open-sans-fontface/fonts/*'
+					]
 				}
 			}
 		}
