@@ -76,9 +76,10 @@ module.exports = function(grunt) {
 		csso: {
 			dist: {
 				expand: true,
-				flatten: true,
-				src: 'src/css/**/*.css',
-				dest: 'dist/css'
+				cwd: 'dist/css',
+				src: ['*.css', '!*.min.css'],
+				dest: 'dist/css/',
+				ext: '.min.css'
 			}
 		},
 
@@ -89,8 +90,9 @@ module.exports = function(grunt) {
 		copy: {
 			manifest: {
 				expand: true,
-				src: 'src/manifest.json',
-				dest: 'dist/'
+				cwd: 'src',
+				src: 'manifest.json',
+				dest: 'dist'
 			},
 		},
 
