@@ -113,5 +113,5 @@ module.exports = function(grunt) {
 	grunt.registerTask( 'test', ['jshint', 'jsonlint'] );
 	grunt.registerTask( 'prep', ['clean', 'copy', 'bowercopy'] );
 
-	grunt.registerTask( 'default', ['test', 'prep' 'css', 'js'] );
+	grunt.registerTask( 'default', ['test', 'prep', 'css', 'js'] );
 };
