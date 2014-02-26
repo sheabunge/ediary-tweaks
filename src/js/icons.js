@@ -3,18 +3,18 @@
 
 	var changeToIcon = function( el, icon, title, classes ) {
 
-		icon = '<i class="fa fa-' + icon;
+		var html = '<i class="fa fa-' + icon;
 
 		if ( classes ) {
-			icon += ' ' + classes;
+			html += ' ' + classes;
 		}
 
 		if ( title ) {
-			icon += '" title="' + title;
+			html += '" title="' + title;
 		}
 
-		icon += '"></i>';
-		el.outerHTML = icon;
+		html += '"></i>';
+		el.outerHTML = html;
 	};
 
 	changeToIcon(
