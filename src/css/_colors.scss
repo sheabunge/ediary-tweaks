@@ -24,28 +24,3 @@ $white:  #fff;
 $silver: #ddd;
 $gray:   #aaa;
 $black:  #111;
-
-
-/* Prettier Links */
-
-a {
-	transition: color .3s ease-in-out;
-}
-
-a {
-	color: $blue;
-
-	&:hover {
-		color: $aqua;
-	}
-}
-
-.triangle-border.new_homework {
-	background: $aqua;
-	border-color: $aqua;
-
-	&.right:after,
-	&.right:before {
-		border-color: transparent $aqua;
-	}
-}

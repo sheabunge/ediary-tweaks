@@ -1,0 +1,19 @@
+.brand-small {
+	display: none !important;
+}
+
+.brand {
+	text-transform: none !important;
+	font-weight: bold;
+	padding-top: 20px;
+	color: #fff !important;
+	margin-top: 10px;
+}
+
+.navbar .navbar-inner .container-fluid .pull-left:first-of-type {
+	margin-left: auto !important;
+}
+
+#logo-container {
+	display: none;
+}

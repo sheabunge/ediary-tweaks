@@ -17,3 +17,18 @@
 		text-decoration: none;
 	}
 }
+
+.brand i {
+	padding-right: 10px;
+	vertical-align: middle;
+	font-size: 30px;
+}
+
+
+.left-sidebar {
+	position: fixed !important;
+
+	ul {
+		padding: initial !important;
+	}
+}
