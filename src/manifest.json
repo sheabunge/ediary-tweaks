@@ -10,7 +10,9 @@
 		}
 	],
 	"web_accessible_resources": [
+		"css/app.css",
 		"css/app.min.css",
+		"js/app.js",
 		"js/app.min.map",
 		"fonts/*"
 	]
