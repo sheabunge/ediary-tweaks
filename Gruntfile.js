@@ -26,7 +26,17 @@ module.exports = function(grunt) {
 
 		jshint: {
 			gruntfile: ['Gruntfile.js'],
-			dist: ['src/js/**/*.js']
+			dist: {
+				options: {
+					globals: {
+						chrome: true,
+						document: true
+					}
+				},
+				files: {
+					src: ['src/js/**/*.js']
+				}
+			}
 		},
 
 		jsonlint: {
