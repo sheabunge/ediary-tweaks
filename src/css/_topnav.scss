@@ -1,16 +1,26 @@
 #top-nav {
 
+	// Icons mixin
+	@mixin top-nav-icon($var) {
+		@extend .#{$fa-css-prefix};
+
+		&:before {
+			vertical-align: middle;
+			font-size: 30px;
+			content: $var;
+		}
+
+		img { display: none; }
+	}
+
+	// Make all icons/text white
 	* {
 		color: #fff !important;
 	}
 
+	// Remove the decoration behind the term name
 	.term {
 		background: none;
-	}
-
-	i {
-		vertical-align: middle;
-		font-size: 30px;
 	}
 
 	// Hide back/forward buttons
@@ -20,8 +30,33 @@
 		display: none;
 	}
 
-	a[href="#nav-week-next"] {
+	a {
+		text-decoration: none;
+
+		&:hover {
+			color: $silver !important;
+		}
+	}
+
+	// Home icon
+	[href="#content/school/toc"] {
+		@include top-nav-icon($fa-var-home);
+	}
+
+	// Next week icon
+	[href="#nav-week-next"] {
 		margin-right: 40px;
+		@include top-nav-icon($fa-var-forward);
+	}
+
+	// Previous icon
+	.previous {
+		@include top-nav-icon($fa-var-arrow-left);
+	}
+
+	// Next icon
+	.next {
+		@include top-nav-icon($fa-var-arrow-right);
 	}
 
 }
