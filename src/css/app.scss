@@ -3,11 +3,14 @@ $base-path: 'chrome-extension://__MSG_@@extension_id__/';
 // Color variables
 @import 'modules/colors';
 
-// Font and vendor includes
-@import 'partials/fonts';
+// Font Awesome
+@import 'modules/font-awesome';
 
 // Icon mixins and extends
 @import 'modules/icons';
+
+// Open Sans font
+@import 'modules/open-sans';
 
 // Links
 @import 'partials/links';

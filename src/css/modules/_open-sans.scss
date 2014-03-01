@@ -1,0 +1,16 @@
+$OpenSansPath: '#{$base-path}fonts';
+@import '../../bower_components/open-sans-fontface/open-sans.scss';
+
+// Set Open Sans globally
+* {
+  font-family: "Open Sans", sans-serif !important;
+}
+
+// Override for Font Awesome and code blocks
+.#{$fa-css-prefix} {
+	font-family: FontAwesome !important;
+}
+
+code, pre {
+	font-family: Menlo, Monaco, "Courier New", monospace !important;
+}
