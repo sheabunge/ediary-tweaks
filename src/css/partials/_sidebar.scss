@@ -1,20 +1,56 @@
+
 .left-sidebar {
 
-	.fa {
+	a {
 		display: block;
-		font-size: 35px;
-		text-align: center;
-	}
-
-	.fa-list,
-	.fa-camera,
-	.fa-calendar,
-	.fa-bar-chart-o {
 		font-size: 30px;
+		text-align: center;
+
+		&:hover {
+			text-decoration: none;
+		}
 	}
 
-	a:hover {
-		text-decoration: none;
+	// Content Pages icon
+	[href="#content/school/toc"] {
+		@include replace-icon($fa-var-list);
+	}
+
+	// Timetable icon
+	[href="#timetable"] {
+		@include replace-icon($fa-var-clock-o) {
+			font-size: 35px;
+		}
+	}
+
+	// Art Gallery icon
+	[href="#art-gallery"] {
+		@include replace-icon($fa-var-camera);
+	}
+
+	// Calendar icon
+	[href="#"] {
+		@include replace-icon($fa-var-calendar);
+	}
+
+	// Report icon
+	[href="#report"] {
+		@include replace-icon($fa-var-bar-chart-o);
+	}
+
+	// Sign out button
+	[href="/users/sign_out"] {
+		@include replace-icon($fa-var-power-off) {
+			font-size: 35px;
+		}
+	}
+
+}
+
+// Add Task button
+#btn-add-task {
+	@include replace-icon($fa-var-plus-circle) {
+		font-size: 35px;
 	}
 }
 
@@ -23,4 +59,3 @@
 	vertical-align: middle;
 	font-size: 30px;
 }
-

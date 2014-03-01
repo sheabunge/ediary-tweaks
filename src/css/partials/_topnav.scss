@@ -19,31 +19,32 @@
 
 	a {
 		text-decoration: none;
+		font-size: 30px;
 
 		&:hover {
-			color: $silver !important;
+			color: $aqua !important;
 		}
 	}
 
 	// Home icon
 	[href="#content/school/toc"] {
-		@include top-nav-icon($fa-var-home);
+		@include replace-icon($fa-var-home);
 	}
 
-	// Next week icon
+// Next week icons
 	[href="#nav-week-next"] {
 		margin-right: 40px;
-		@include top-nav-icon($fa-var-forward);
+		@include replace-icon($fa-var-forward);
 	}
 
 	// Previous icon
 	.previous {
-		@include top-nav-icon($fa-var-arrow-left);
+		@include replace-icon($fa-var-arrow-left);
 	}
 
 	// Next icon
 	.next {
-		@include top-nav-icon($fa-var-arrow-right);
+		@include replace-icon($fa-var-arrow-right);
 	}
 
 }

@@ -9,19 +9,11 @@
 	}
 }
 
-
-%top-nav-icon {
+@mixin replace-icon($var) {
 	@extend %replace-icon;
 
 	&:before {
-		font-size: 30px;
-	}
-}
-
-@mixin top-nav-icon($var) {
-	@extend %top-nav-icon;
-
-	&:before {
 		content: $var;
+		@content;
 	}
 }
