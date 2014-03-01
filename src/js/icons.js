@@ -1,3 +1,26 @@
+/* Top Nav */
+
+changeToIcon(
+	document.querySelector('#top-nav a[href="#content/school/toc"] img'),
+	'home', 'Home'
+);
+
+changeToIcon(
+	document.querySelector('#top-nav a[href="#nav-week-next"] img'),
+	'forward', 'Next Week'
+);
+
+changeToIcon(
+	document.querySelector('#top-nav .previous img'),
+	'arrow-left', 'Previous Day'
+);
+
+changeToIcon(
+	document.querySelector('#top-nav .next img'),
+	'arrow-right', 'Next Day'
+);
+
+/* Sidebar */
 
 changeToIcon(
 	document.querySelector( '.add-task' ),
@@ -33,5 +56,3 @@ changeToIcon(
 	document.querySelector( '#sign-out-btn img' ),
 	'power-off', 'Sign Out'
 );
-
-

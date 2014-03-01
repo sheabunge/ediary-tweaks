@@ -13,8 +13,15 @@
 		font-size: 30px;
 	}
 
+	// Hide back/forward buttons
+	.go-back-btn,
+	.go-forward-btn,
 	img[src="images/diary/top-nav-home-separator.png"] {
-		visibility: hidden;
+		display: none;
+	}
+
+	a[href="#nav-week-next"] {
+		margin-right: 40px;
 	}
 
 }
