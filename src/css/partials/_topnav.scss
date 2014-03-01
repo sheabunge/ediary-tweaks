@@ -2,7 +2,7 @@
 
 	// Make all icons/text white
 	* {
-		color: #fff !important;
+		color: #fff;
 	}
 
 	// Remove the decoration behind the term name
@@ -27,27 +27,23 @@
 
 	// Home icon
 	[href="#content/school/toc"] {
-		@extend %top-nav-icon;
-		content: $fa-var-home;
+		@include top-nav-icon($fa-var-home);
 	}
 
 	// Next week icon
 	[href="#nav-week-next"] {
 		margin-right: 40px;
-		@extend %top-nav-icon;
-		content: $fa-var-forward;
+		@include top-nav-icon($fa-var-forward);
 	}
 
 	// Previous icon
 	.previous {
-		@extend %top-nav-icon;
-		content: $fa-var-arrow-left;
+		@include top-nav-icon($fa-var-arrow-left);
 	}
 
 	// Next icon
 	.next {
-		@extend %top-nav-icon;
-		content: $fa-var-arrow-right;
+		@include top-nav-icon($fa-var-arrow-right);
 	}
 
 }

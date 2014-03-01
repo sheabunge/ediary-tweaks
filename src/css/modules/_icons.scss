@@ -13,7 +13,15 @@
 %top-nav-icon {
 	@extend %replace-icon;
 
-	:before {
+	&:before {
 		font-size: 30px;
+	}
+}
+
+@mixin top-nav-icon($var) {
+	@extend %top-nav-icon;
+
+	&:before {
+		content: $var;
 	}
 }
