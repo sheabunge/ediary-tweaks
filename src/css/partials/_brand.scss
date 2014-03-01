@@ -8,6 +8,14 @@
 	padding-top: 20px;
 	color: #fff !important;
 	margin-top: 10px;
+
+	&:before {
+		@extend .#{$fa-css-prefix};
+		content: $fa-var-cogs;
+		padding-right: 10px;
+		vertical-align: middle;
+		font-size: 30px;
+	}
 }
 
 .navbar .navbar-inner .container-fluid .pull-left:first-of-type {
