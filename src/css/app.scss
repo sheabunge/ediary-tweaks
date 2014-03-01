@@ -12,6 +12,9 @@ $base-path: 'chrome-extension://__MSG_@@extension_id__/';
 // Links
 @import 'partials/links';
 
+// App Chrome (sidebar and header)
+@import 'partials/chrome';
+
 // Brand (header)
 @import 'partials/brand';
 
@@ -26,5 +29,3 @@ $base-path: 'chrome-extension://__MSG_@@extension_id__/';
 
 // Other elements
 @import 'partials/elements';
-
-
