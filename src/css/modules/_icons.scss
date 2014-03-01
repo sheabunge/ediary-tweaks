@@ -1,0 +1,19 @@
+
+%replace-icon {
+	&:before {
+		@extend .#{$fa-css-prefix};
+	}
+
+	img {
+		display: none;
+	}
+}
+
+
+%top-nav-icon {
+	@extend %replace-icon;
+
+	:before {
+		font-size: 30px;
+	}
+}

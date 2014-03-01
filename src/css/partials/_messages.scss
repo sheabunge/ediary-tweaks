@@ -1,0 +1,9 @@
+.triangle-border.new_homework {
+	background: $aqua;
+	border-color: $aqua;
+
+	&.right:after,
+	&.right:before {
+		border-color: transparent $aqua;
+	}
+}

@@ -1,41 +1,30 @@
 $base-path: 'chrome-extension://__MSG_@@extension_id__/';
 
-@import 'fonts';
-@import 'colors';
+// Color variables
+@import 'modules/colors';
 
-@import 'brand';
-@import 'sidebar';
-@import 'topnav';
+// Font and vendor includes
+@import 'partials/fonts';
 
-/* Prettier Links */
+// Icon mixins and extends
+@import 'modules/icons';
 
-a {
-	transition: color .3s ease-in-out;
-}
+// Links
+@import 'partials/links';
 
-a {
-	color: $blue;
+// Brand (header)
+@import 'partials/brand';
 
-	&:hover {
-		color: $aqua;
-	}
-}
+// Left sidebar
+@import 'partials/sidebar';
 
-// New Homework notification
+// Top navigation
+@import 'partials/topnav';
 
-.triangle-border.new_homework {
-	background: $aqua;
-	border-color: $aqua;
+// Message boxes
+@import 'partials/messages';
 
-	&.right:after,
-	&.right:before {
-		border-color: transparent $aqua;
-	}
-}
+// Other elements
+@import 'partials/elements';
 
-// Page header
-
-.default-page header h1, .page header h1, .welcome header h1 {
-	background-color: $blue;
-}
 

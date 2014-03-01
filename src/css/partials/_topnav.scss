@@ -1,18 +1,5 @@
 #top-nav {
 
-	// Icons mixin
-	@mixin top-nav-icon($var) {
-		@extend .#{$fa-css-prefix};
-
-		&:before {
-			vertical-align: middle;
-			font-size: 30px;
-			content: $var;
-		}
-
-		img { display: none; }
-	}
-
 	// Make all icons/text white
 	* {
 		color: #fff !important;
@@ -40,23 +27,27 @@
 
 	// Home icon
 	[href="#content/school/toc"] {
-		@include top-nav-icon($fa-var-home);
+		@extend %top-nav-icon;
+		content: $fa-var-home;
 	}
 
 	// Next week icon
 	[href="#nav-week-next"] {
 		margin-right: 40px;
-		@include top-nav-icon($fa-var-forward);
+		@extend %top-nav-icon;
+		content: $fa-var-forward;
 	}
 
 	// Previous icon
 	.previous {
-		@include top-nav-icon($fa-var-arrow-left);
+		@extend %top-nav-icon;
+		content: $fa-var-arrow-left;
 	}
 
 	// Next icon
 	.next {
-		@include top-nav-icon($fa-var-arrow-right);
+		@extend %top-nav-icon;
+		content: $fa-var-arrow-right;
 	}
 
 }
