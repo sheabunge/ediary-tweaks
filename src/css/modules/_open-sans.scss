@@ -1,5 +1,5 @@
-$OpenSansPath: '#{$base-path}fonts';
-@import '../../bower_components/open-sans-fontface/open-sans.scss';
+$open-sans-path: '#{$base-path}fonts';
+@import '../../bower_components/open-sans/scss/open-sans';
 
 // Set Open Sans globally
 * {

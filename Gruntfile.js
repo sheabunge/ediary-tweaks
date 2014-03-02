@@ -120,7 +120,7 @@ module.exports = function(grunt) {
 				files: {
 					fonts: [
 						'font-awesome/fonts/*',
-						'open-sans-fontface/fonts/*'
+						'open-sans/fonts/*'
 					]
 				}
 			}

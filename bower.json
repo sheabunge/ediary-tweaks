@@ -15,7 +15,7 @@
     "bower_components"
   ],
   "dependencies": {
-    "open-sans-fontface": "~1.0.4",
-    "font-awesome": "~4.0.3"
+    "font-awesome": "~4.0.3",
+    "open-sans": "~1.0.0"
   }
 }
