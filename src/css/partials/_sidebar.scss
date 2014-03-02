@@ -33,18 +33,18 @@
 		@include replace-icon($fa-var-bar-chart-o);
 	}
 
-	// Sign out button
-	[href="/users/sign_out"] {
-		@include replace-icon($fa-var-power-off) {
-			font-size: 35px;
-		}
-	}
-
 }
 
 // Add Task button
 #btn-add-task {
 	@include replace-icon($fa-var-plus-circle) {
+		font-size: 35px;
+	}
+}
+
+// Sign out button
+#sign-out-btn a {
+	@include replace-icon($fa-var-power-off) {
 		font-size: 35px;
 	}
 }
