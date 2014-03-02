@@ -109,6 +109,12 @@ module.exports = function(grunt) {
 			manifest: {
 				src: 'src/manifest.json',
 				dest: 'dist/manifest.json'
+			},
+			images: {
+				expand: true,
+				cwd: 'src/images/',
+				src: ['*.{png,jpg,gif}'],
+				dest: 'dist/images/'
 			}
 		},
 
