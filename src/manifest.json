@@ -1,8 +1,8 @@
 {
 	"name": "My EDiary Tweaks",
+	"version": "0.5.5",
 	"description": "A Google Chrome extension designed to improve the UI of the My EDiary student diary app.",
 	"manifest_version": 2,
-	"version": "0.5.5",
 	"content_scripts": [
 		{
 			"matches": ["https://*.myediary.com.au/diary_app/*"],
