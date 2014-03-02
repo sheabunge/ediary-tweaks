@@ -117,13 +117,19 @@ module.exports = function(grunt) {
 				destPrefix: 'dist/'
 			},
 			fonts: {
+				options: {
+					destPrefix: 'dist/fonts/'
+				},
 				files: {
-					fonts: [
-						'font-awesome/fonts/*',
-						'open-sans/fonts/*'
-					]
+					'font-awesome': 'font-awesome/fonts/*',
+					'open-sans/Regular': 'open-sans/fonts/Regular/*'
 				}
 			}
+		},
+
+		bump: {
+			files: ["package.json", "bower.json", "src/manifest.json"],
+			commitFiles: ["<%= bump.files %>"]
 		}
 
 	});
