@@ -7,8 +7,12 @@
 	"content_scripts": [
 		{
 			"matches": ["https://*.myediary.com.au/diary_app/*"],
-			"js": ["js/app.min.js"],
+			"js": ["js/early.min.js"],
 			"run_at": "document_end"
+		},
+		{
+			"matches": ["https://*.myediary.com.au/diary_app/*"],
+			"js": ["js/late.min.js"]
 		}
 	],
 	"icons": {
@@ -19,8 +23,10 @@
 	"web_accessible_resources": [
 		"css/app.css",
 		"css/app.min.css",
-		"js/app.js",
-		"js/app.min.map",
+		"js/early.js",
+		"js/early.min.map",
+		"js/late.js",
+		"js/late.min.map",
 		"fonts/*"
 	]
 }

@@ -51,8 +51,13 @@ module.exports = function(grunt) {
 
 		concat: {
 			js: {
-				src: ['src/js/main.js', 'src/js/**/*.js'],
-				dest: 'dist/js/app.js'
+				files: {
+					'dist/js/early.js': [
+						'src/js/enqueue-css.js',
+						'src/js/early/**/*.js'
+					],
+					'dist/js/late.js' : 'src/js/late/**/**.js'
+				}
 			}
 		},
 
@@ -62,7 +67,8 @@ module.exports = function(grunt) {
 					sourceMap: true
 				},
 				files: {
-					'dist/js/app.min.js': ['dist/js/app.js']
+					'dist/js/early.min.js': 'dist/js/early.js',
+					'dist/js/late.min.js': 'dist/js/late.js'
 				}
 			}
 		},
