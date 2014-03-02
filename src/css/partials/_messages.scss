@@ -1,9 +1,11 @@
+
 .triangle-border.new_homework {
-	background: $aqua;
-	border-color: $aqua;
+	color: #00529B;
+	background: #BDE5F8;
+	border-color: #BDE5F8;
 
 	&.right:after,
 	&.right:before {
-		border-color: transparent $aqua;
+		border-color: transparent #BDE5F8;
 	}
 }

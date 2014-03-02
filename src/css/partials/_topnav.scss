@@ -13,21 +13,12 @@
 		display: none;
 	}
 
-	a {
-		text-decoration: none;
-		font-size: 30px;
-
-		&:hover {
-			color: $aqua !important;
-		}
-	}
-
 	// Home icon
 	[href="#content/school/toc"] {
 		@include replace-icon($fa-var-home);
 	}
 
-// Next week icons
+	// Next week icons
 	[href="#nav-week-next"] {
 		margin-right: 40px;
 		@include replace-icon($fa-var-forward);

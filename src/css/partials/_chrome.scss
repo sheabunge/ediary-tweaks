@@ -1,6 +1,6 @@
 .navbar,
 .left-sidebar {
-	background: #222;
+	background: $chrome-color !important;
 	position: fixed !important;
 	z-index: 100000;
 	box-shadow: 0 1px 3px rgba(0,0,0,0.25), inset 0 -1px 0 rgba(0,0,0,0.1);
@@ -12,4 +12,17 @@
 
 .navbar-inner {
 	box-shadow: none;
+}
+
+.top-nav a:before,
+.left-sidebar a:before {
+	text-decoration: none;
+	font-size: 30px;
+	color: $primary-color;
+	transition: color .3s ease-in-out;
+}
+
+.top-nav a:hover:before,
+.left-sidebar a:hover:before {
+	color: $secondary-color;
 }
