@@ -1,13 +1,9 @@
 #top-nav {
 
-	// Make all icons/text white
-	* {
-		color: #fff;
-	}
-
 	// Remove the decoration behind the term name
 	.term {
 		background: none;
+		color: #fff;
 	}
 
 	// Hide back/forward buttons
