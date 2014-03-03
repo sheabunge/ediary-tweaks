@@ -89,10 +89,13 @@ module.exports = function(grunt) {
 		},
 
 		autoprefixer: {
+			options: {
+				map: true
+			},
 			dist: {
 				expand: true,
 				flatten: true,
-				src: 'src/css/**/*.css',
+				src: 'dist/css/**/*.css',
 				dest: 'dist/css'
 			}
 		},
@@ -133,8 +136,14 @@ module.exports = function(grunt) {
 					destPrefix: 'dist/fonts/'
 				},
 				files: {
-					'font-awesome': 'font-awesome/fonts/*',
-					'open-sans/Regular': 'open-sans/fonts/Regular/*'
+					'font-awesome':
+						'font-awesome/fonts/*-webfont.{ttf,woff,eot,svg}',
+					'open-sans/regular':
+						'open-sans/fonts/regular/*-webfont.{ttf,woff,eot,svg}',
+					'open-sans/italic':
+						'open-sans/fonts/italic/*-webfont.{ttf,woff,eot,svg}',
+					'open-sans/bold':
+						'open-sans/fonts/bold/*-webfont.{ttf,woff,eot,svg}'
 				}
 			}
 		},

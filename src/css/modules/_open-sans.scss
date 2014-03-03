@@ -1,5 +1,10 @@
+
+// Load Open Sans stylesheets
 $open-sans-path: '#{$base-path}fonts/open-sans';
+@import '../../bower_components/open-sans/scss/base';
 @import '../../bower_components/open-sans/scss/regular';
+@import '../../bower_components/open-sans/scss/bold';
+@import '../../bower_components/open-sans/scss/italic';
 
 // Set Open Sans globally
 * {
