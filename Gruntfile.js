@@ -134,7 +134,9 @@ module.exports = function(grunt) {
 				},
 				files: {
 					'font-awesome': 'font-awesome/fonts/*',
-					'open-sans/Regular': 'open-sans/fonts/Regular/*'
+					'open-sans/regular': 'open-sans/fonts/regular/*',
+					'open-sans/italic': 'open-sans/fonts/italic/*',
+					'open-sans/bold': 'open-sans/fonts/bold/*'
 				}
 			}
 		},
