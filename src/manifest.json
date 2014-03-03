@@ -22,6 +22,7 @@
 	},
 	"web_accessible_resources": [
 		"css/app.css",
+		"css/app.css.map",
 		"css/app.min.css",
 		"js/early.js",
 		"js/early.min.map",
