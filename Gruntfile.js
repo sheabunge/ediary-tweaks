@@ -89,10 +89,13 @@ module.exports = function(grunt) {
 		},
 
 		autoprefixer: {
+			options: {
+				map: true
+			},
 			dist: {
 				expand: true,
 				flatten: true,
-				src: 'src/css/**/*.css',
+				src: 'dist/css/**/*.css',
 				dest: 'dist/css'
 			}
 		},
