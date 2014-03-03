@@ -1,9 +1,9 @@
 #top-nav {
 
 	// Remove the decoration behind the term name
-	.term {
+	.term, .week {
 		background: none;
-		color: #fff;
+		color: $primary-color;
 	}
 
 	// Hide back/forward buttons

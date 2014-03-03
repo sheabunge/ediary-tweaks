@@ -6,8 +6,12 @@
 	text-transform: none !important;
 	font-weight: bold;
 	padding-top: 20px;
-	color: $white !important;
+	color: $primary-color !important;
 	margin-top: 10px;
+
+	&:hover {
+		color: $secondary-color !important;
+	}
 
 	&:before {
 		@extend .#{$fa-css-prefix};
