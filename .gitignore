@@ -1,8 +1,7 @@
+.sass-cache
 node_modules
 npm-debug.log
 bower_components
-*.sublime-workspace
-*.sublime-project
 dist
-*.crx
-*.pem
+key.pem
+ediary-tweaks.zip

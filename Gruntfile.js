@@ -139,6 +139,26 @@ module.exports = function(grunt) {
 			}
 		},
 
+		compress: {
+			dist: {
+				options: {
+					archive: 'ediary-tweaks.zip'
+				},
+				files: [
+					{
+						expand: true,
+						cwd: 'dist/',
+						src: ['**'],
+						dest: 'ediary-tweaks/'
+					},
+					{
+						src: 'key.pem',
+						dest: './'
+					}
+				]
+			}
+		},
+
 		bump: {
 			options: {
 				files: ["package.json", "bower.json", "src/manifest.json"],
