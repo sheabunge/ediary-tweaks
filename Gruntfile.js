@@ -136,10 +136,14 @@ module.exports = function(grunt) {
 					destPrefix: 'dist/fonts/'
 				},
 				files: {
-					'font-awesome': 'font-awesome/fonts/*',
-					'open-sans/regular': 'open-sans/fonts/regular/*',
-					'open-sans/italic': 'open-sans/fonts/italic/*',
-					'open-sans/bold': 'open-sans/fonts/bold/*'
+					'font-awesome':
+						'font-awesome/fonts/*-webfont.{ttf,woff,eot,svg}',
+					'open-sans/regular':
+						'open-sans/fonts/regular/*-webfont.{ttf,woff,eot,svg}',
+					'open-sans/italic':
+						'open-sans/fonts/italic/*-webfont.{ttf,woff,eot,svg}',
+					'open-sans/bold':
+						'open-sans/fonts/bold/*-webfont.{ttf,woff,eot,svg}'
 				}
 			}
 		},
