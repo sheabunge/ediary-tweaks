@@ -162,7 +162,7 @@ module.exports = function(grunt) {
 					},
 					{
 						src: 'key.pem',
-						dest: './'
+						dest: 'ediary-tweaks/'
 					}
 				]
 			}

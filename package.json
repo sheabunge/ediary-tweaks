@@ -1,7 +1,7 @@
 {
   "name": "ediary-tweaks",
-  "version": "0.6.0",
-  "description": "A Google Chrome extension designed to improve the UI of the My EDiary school diary app.",
+  "version": "0.6.1-1",
+  "description": "A Google Chrome extension designed to improve the UI of the MyEDiary school diary app.",
   "scripts": {
     "test": "gulp test"
   },
