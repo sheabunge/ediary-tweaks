@@ -15,7 +15,7 @@
 
 	&:before {
 		@extend .#{$fa-css-prefix};
-		content: $fa-var-cogs;
+		content: $fa-var-book;
 		padding-right: 10px;
 		vertical-align: middle;
 		font-size: 30px;
