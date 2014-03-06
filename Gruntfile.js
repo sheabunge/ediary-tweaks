@@ -3,7 +3,8 @@ module.exports = function(grunt) {
 
 	require('load-grunt-tasks')(grunt);
 
-	var match_webfont = '*-webfont.{ttf,woff,eot,svg}';
+	var webfontMatch = '*-webfont.{ttf,woff,eot,svg}';
+	var jsonFiles = ['package.json', 'bower.json', 'src/manifest.json'];
 
 	grunt.initConfig({
 
@@ -43,11 +44,7 @@ module.exports = function(grunt) {
 
 		jsonlint: {
 			dist: {
-				src: [
-					'src/manifest.json',
-					'bower.json',
-					'package.json'
-				]
+				src: jsonFiles
 			}
 		},
 
@@ -138,10 +135,10 @@ module.exports = function(grunt) {
 					destPrefix: 'dist/fonts/'
 				},
 				files: {
-					'font-awesome':	'font-awesome/fonts/' + match_webfont,
-					'open-sans/regular': 'open-sans/fonts/regular/' + match_webfont,
-					'open-sans/italic': 'open-sans/fonts/italic/' + match_webfont,
-					'open-sans/bold': 'open-sans/fonts/bold/' + match_webfont
+					'font-awesome':	'font-awesome/fonts/' + webfontMatch,
+					'open-sans/regular': 'open-sans/fonts/regular/' + webfontMatch,
+					'open-sans/italic': 'open-sans/fonts/italic/' + webfontMatch,
+					'open-sans/bold': 'open-sans/fonts/bold/' + webfontMatch
 				}
 			}
 		},
@@ -162,8 +159,8 @@ module.exports = function(grunt) {
 
 		bump: {
 			options: {
-				files: ['package.json', 'bower.json', 'src/manifest.json'],
-				commitFiles: ['package.json', 'bower.json', 'src/manifest.json'],
+				files: jsonFiles,
+				commitFiles: jsonFiles,
 				pushTo: 'origin'
 			}
 		}
