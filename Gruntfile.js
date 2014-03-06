@@ -3,6 +3,8 @@ module.exports = function(grunt) {
 
 	require('load-grunt-tasks')(grunt);
 
+	var match_webfont = '*-webfont.{ttf,woff,eot,svg}';
+
 	grunt.initConfig({
 
 		watch: {
@@ -136,14 +138,10 @@ module.exports = function(grunt) {
 					destPrefix: 'dist/fonts/'
 				},
 				files: {
-					'font-awesome':
-						'font-awesome/fonts/*-webfont.{ttf,woff,eot,svg}',
-					'open-sans/regular':
-						'open-sans/fonts/regular/*-webfont.{ttf,woff,eot,svg}',
-					'open-sans/italic':
-						'open-sans/fonts/italic/*-webfont.{ttf,woff,eot,svg}',
-					'open-sans/bold':
-						'open-sans/fonts/bold/*-webfont.{ttf,woff,eot,svg}'
+					'font-awesome':	'font-awesome/fonts/' + match_webfont,
+					'open-sans/regular': 'open-sans/fonts/regular/' + match_webfont,
+					'open-sans/italic': 'open-sans/fonts/italic/' + match_webfont,
+					'open-sans/bold': 'open-sans/fonts/bold/' + match_webfont
 				}
 			}
 		},
