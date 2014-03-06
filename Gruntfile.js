@@ -153,18 +153,12 @@ module.exports = function(grunt) {
 				options: {
 					archive: 'ediary-tweaks.zip'
 				},
-				files: [
-					{
-						expand: true,
-						cwd: 'dist/',
-						src: ['**'],
-						dest: 'ediary-tweaks/'
-					},
-					{
-						src: 'key.pem',
-						dest: 'ediary-tweaks/'
-					}
-				]
+				files: [{
+					expand: true,
+					cwd: 'dist/',
+					src: ['**'],
+					dest: 'ediary-tweaks/'
+				}]
 			}
 		},
 
