@@ -78,7 +78,8 @@ module.exports = function(grunt) {
 		sass: {
 			dist: {
 				options: {
-					style: 'expanded'
+					style: 'expanded',
+					sourcemap: true
 				},
 				files: [{
 					cwd: 'src/css',
@@ -91,9 +92,6 @@ module.exports = function(grunt) {
 		},
 
 		autoprefixer: {
-			options: {
-				map: true
-			},
 			dist: {
 				expand: true,
 				flatten: true,
