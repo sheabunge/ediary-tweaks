@@ -20,6 +20,11 @@ module.exports = function(grunt) {
 				tasks: ['jshint:dist', 'js']
 			},
 
+			html: {
+				files: ['src/html/**/*.html'],
+				tasks: ['copy:html']
+			},
+
 			manifest: {
 				files: ['src/manifest.json'],
 				tasks: ['copy:manifest']
@@ -58,7 +63,8 @@ module.exports = function(grunt) {
 						'src/js/enqueue-css.js',
 						'src/js/early/**/*.js'
 					],
-					'dist/js/late.js' : 'src/js/late/**/**.js'
+					'dist/js/late.js': 'src/js/late/**/**.js',
+					'dist/js/options.js': 'src/js/options/**/**.js'
 				}
 			}
 		},
@@ -70,7 +76,8 @@ module.exports = function(grunt) {
 				},
 				files: {
 					'dist/js/early.min.js': 'dist/js/early.js',
-					'dist/js/late.min.js': 'dist/js/late.js'
+					'dist/js/late.min.js': 'dist/js/late.js',
+					'dist/js/options.min.js': 'dist/js/options.js'
 				}
 			}
 		},
@@ -124,6 +131,12 @@ module.exports = function(grunt) {
 				cwd: 'src/images/',
 				src: ['*.{png,jpg,gif}'],
 				dest: 'dist/images/'
+			},
+			html: {
+				expand: true,
+				cwd: 'src/html/',
+				src: ['*.html'],
+				dest: 'dist/html/'
 			}
 		},
 
