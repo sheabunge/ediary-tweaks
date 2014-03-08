@@ -18,20 +18,20 @@ body,
 	box-shadow: none;
 }
 
-.top-nav a:before,
-.left-sidebar a:before {
+.top-nav a::before,
+.left-sidebar a::before {
 	text-decoration: none;
 	font-size: 30px;
 	color: $primary-color;
 }
 
-.top-nav a:hover:before,
-.left-sidebar a:hover:before {
+.top-nav a:hover::before,
+.left-sidebar a:hover::before {
 	color: $secondary-color;
 }
 
 .brand,
-.top-nav a:before,
-.left-sidebar a:before {
+.top-nav a::before,
+.left-sidebar a::before {
 	transition: color .2s ease-in-out;
 }

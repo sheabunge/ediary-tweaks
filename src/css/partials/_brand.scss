@@ -13,7 +13,7 @@
 		color: $secondary-color !important;
 	}
 
-	&:before {
+	&::before {
 		@extend .#{$fa-css-prefix};
 		content: $fa-var-book;
 		padding-right: 10px;

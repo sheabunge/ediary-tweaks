@@ -1,6 +1,6 @@
 
 %replace-icon {
-	&:before {
+	&::before {
 		@extend .#{$fa-css-prefix};
 	}
 
@@ -12,7 +12,7 @@
 @mixin replace-icon($var) {
 	@extend %replace-icon;
 
-	&:before {
+	&::before {
 		content: $var;
 		@content;
 	}
