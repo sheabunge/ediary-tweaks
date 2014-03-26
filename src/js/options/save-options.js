@@ -1,10 +1,4 @@
 
-var defaultOptions = {
-	primaryColor: 'blue',
-	secondaryColor: 'teal',
-	chromeColor: 'black'
-};
-
 var getSelectValue = function (select) {
 	return select.children[select.selectedIndex].value;
 };
@@ -24,42 +18,35 @@ var setSelectValue = function (select, value) {
 // Saves options to localStorage.
 var saveOptions = function () {
 
-	localStorage.primaryColor =
-		getSelectValue( document.getElementById( 'primary-color' ) );
+	chrome.storage.sync.set({
+		'primaryColor': getSelectValue( document.getElementById( 'primary-color' ) ),
+		'secondaryColor':	getSelectValue( document.getElementById( 'secondary-color' ) ),
+		'chromeColor': getSelectValue( document.getElementById( 'chrome-color' ) )
+	}, function () {
 
-	localStorage.secondaryColor =
-		getSelectValue( document.getElementById( 'secondary-color' ) );
+		// Update status to let user know options were saved.
+		var status = document.getElementById('status');
+		status.textContent = 'Options saved.';
 
-	localStorage.chromeColor =
-		getSelectValue( document.getElementById( 'chrome-color' ) );
-
-	// Update status to let user know options were saved.
-	var status = document.getElementById('status');
-	status.textContent = 'Options saved.';
-
-	setTimeout( function() {
-		status.textContent = '';
-	}, 750 );
+		setTimeout( function() {
+			status.textContent = '';
+		}, 750 );
+	});
 };
 
 // Restores select box state to saved value from localStorage.
 var restoreOptions = function () {
 
-	setSelectValue(
-		document.getElementById( 'primary-color' ),
-		localStorage.primaryColor || defaultOptions.primaryColor
-	);
+	chrome.storage.sync.get({
+		primaryColor: 'blue',
+		secondaryColor: 'teal',
+		chromeColor: 'black'
+	}, function ( options ) {
 
-	setSelectValue(
-		document.getElementById( 'secondary-color' ),
-		localStorage.secondaryColor || defaultOptions.secondaryColor
-	);
-
-	setSelectValue(
-		document.getElementById( 'chrome-color' ),
-		localStorage.chromeColor || defaultOptions.chromeColor
-	);
-
+		setSelectValue( document.getElementById( 'primary-color' ), options.primaryColor );
+		setSelectValue( document.getElementById( 'secondary-color' ), options.secondaryColor );
+		setSelectValue( document.getElementById( 'chrome-color' ), options.chromeColor );
+	});
 };
 
 document.addEventListener( 'DOMContentLoaded', restoreOptions );

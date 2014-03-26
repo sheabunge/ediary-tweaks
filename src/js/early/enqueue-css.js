@@ -1,9 +1,18 @@
 
-// Add themes classes
-var base = document.documentElement;
-base.classList.add('primary-blue');
-base.classList.add('secondary-teal');
-base.classList.add('chrome-black');
+// Load color themes from options
+chrome.storage.sync.get(
+	{
+		primaryColor: 'blue',
+		secondaryColor: 'teal',
+		chromeColor: 'black'
+	},
+	function ( options ) {
+		var base = document.documentElement;
+		base.classList.add( 'primary-' + options.primaryColor );
+		base.classList.add( 'secondary-' + options.secondaryColor );
+		base.classList.add( 'chrome-' + options.chromeColor );
+	}
+);
 
 // Enqueue stylesheet
 var style = document.createElement('link');
