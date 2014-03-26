@@ -6,11 +6,11 @@
 	text-transform: none !important;
 	font-weight: bold !important;
 	padding-top: 20px;
-	color: $primary-color !important;
 	margin-top: 10px;
+	@include apply-theme(primary, color, true);
 
 	&:hover {
-		color: $secondary-color !important;
+		@include apply-theme(secondary, color, true);
 	}
 
 	&::before {

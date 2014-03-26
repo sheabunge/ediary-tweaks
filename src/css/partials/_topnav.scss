@@ -3,8 +3,8 @@
 	// Remove the decoration behind the term name
 	.term, .week {
 		background: none;
-		color: $primary-color;
 		font-weight: bold;
+		@include apply-theme(primary, color);
 	}
 
 	// Hide back/forward buttons

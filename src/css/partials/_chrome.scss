@@ -1,7 +1,7 @@
 body,
 .navbar,
 .left-sidebar {
-	background: $chrome-color !important;
+	@include apply-theme(chrome, background, true);
 }
 
 .navbar,
@@ -22,12 +22,12 @@ body,
 .left-sidebar a::before {
 	text-decoration: none;
 	font-size: 30px;
-	color: $primary-color;
+	@include apply-theme(primary, color);
 }
 
 .top-nav a:hover::before,
 .left-sidebar a:hover::before {
-	color: $secondary-color;
+	@include apply-theme(secondary, color);
 }
 
 .brand,
