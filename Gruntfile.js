@@ -55,7 +55,7 @@ module.exports = function(grunt) {
 			js: {
 				files: {
 					'dist/js/early.js': [
-						'src/js/enqueue-css.js',
+						'src/js/early/enqueue-css.js',
 						'src/js/early/**/*.js'
 					],
 					'dist/js/late.js' : 'src/js/late/**/**.js'
