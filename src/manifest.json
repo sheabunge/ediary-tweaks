@@ -20,13 +20,17 @@
 		"128": "images/icon-128.png"
 	},
 	"web_accessible_resources": [
+		"fonts/*",
+
 		"css/app.css",
 		"css/app.css.map",
 		"css/app.min.css",
+
 		"js/early.js",
 		"js/early.min.map",
+
 		"js/late.js",
-		"js/late.min.map",
-		"fonts/*"
-	]
+		"js/late.min.map"
+	],
+	"options_page": "html/options.html"
 }
