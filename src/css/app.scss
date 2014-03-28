@@ -1,8 +1,5 @@
 $base-path: 'chrome-extension://__MSG_@@extension_id__/';
 
-// Colors and themes
-@import 'modules/colors';
-
 // Font Awesome
 @import 'modules/font-awesome';
 
@@ -11,6 +8,9 @@ $base-path: 'chrome-extension://__MSG_@@extension_id__/';
 
 // Open Sans font
 @import 'modules/open-sans';
+
+// Colors and themes
+@import 'modules/colors';
 
 // App Chrome (sidebar and header)
 @import 'partials/chrome';
