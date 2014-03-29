@@ -1,0 +1,97 @@
+@import 'modules/colors';
+
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+
+body {
+    margin-right: auto;
+    margin-left: auto;
+    padding: 20px 30px 20px 30px;
+    width: 400px;
+    border:1px solid #DDD;
+    border-radius: 5px;
+    background: #FFF;
+    color: #888;
+    text-shadow: 1px 1px 1px #FFF;
+    font-family: 'Chrome Droid Sans', 'Droid Sans Fallback', 'Lucida Grande', sans-serif;
+}
+
+h1 {
+	display: block;
+	margin: -10px -30px 30px -30px;
+	padding: 0px 0px 10px 40px;
+	border-bottom: 1px solid #DADADA;
+	color: #888;
+
+	> span {
+		display: block;
+		font-size: 11px;
+	}
+}
+
+label {
+	display: block
+}
+
+input[type="text"], input[type="email"], textarea, select {
+	margin: {
+		top: 2px;
+		right: 6px;
+		bottom: 16px;
+	}
+	padding: 6px 12px;
+	outline: 0 none;
+	border: 1px solid #CCC;
+	border-radius: 4px;
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+	color: #888;
+	font-size: 14px;
+	display: block;
+	width: 90%;
+}
+
+select {
+	height: 30px;
+	background: #FFF no-repeat right;
+}
+
+option {
+	color: #000;
+	padding: 5px;
+	border: 0;
+}
+
+$dark-colors: blue navy orange red maroon fuchsia purple black;
+
+@each $color-name, $color-value in $colors {
+
+	option[value="#{$color-name}"] {
+		background: $color-value;
+
+		@if index($dark-colors, $color-name) {
+			color: #fff;
+		}
+	}
+}
+
+textarea {
+	height: 100px;
+}
+
+button, .button, input[type="submit"] {
+	padding: 10px 25px 10px 25px;
+	border: 1px solid #CCC;
+	border-radius: 4px;
+	color: #333;
+
+	&:hover {
+		border-color: #ADADAD;
+		background-color: #EBEBEB;
+		color: #333;
+	}
+}
+
+#status {
+	float: right;
+}
