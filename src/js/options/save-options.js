@@ -39,8 +39,8 @@ var restoreOptions = function () {
 
 	chrome.storage.sync.get({
 		primaryColor: 'blue',
-		secondaryColor: 'teal',
-		chromeColor: 'black'
+		secondaryColor: 'cyan',
+		chromeColor: 'navy'
 	}, function ( options ) {
 
 		setSelectValue( document.getElementById( 'primary-color' ), options.primaryColor );

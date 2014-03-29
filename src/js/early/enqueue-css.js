@@ -3,8 +3,8 @@
 chrome.storage.sync.get(
 	{
 		primaryColor: 'blue',
-		secondaryColor: 'teal',
-		chromeColor: 'black'
+		secondaryColor: 'cyan',
+		chromeColor: 'navy'
 	},
 	function ( options ) {
 		var base = document.documentElement;
