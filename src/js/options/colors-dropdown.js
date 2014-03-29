@@ -1,7 +1,7 @@
 var colors = [
 	'blue', 'cyan', 'navy', 'teal', 'green', 'olive', 'lime',
 	'yellow', 'orange', 'red', 'magenta', 'purple', 'maroon',
-	'white', 'silver', 'grey', 'black'
+	'white', 'silver', 'gray', 'black'
 ];
 
 /** Add capitalize method to strings */

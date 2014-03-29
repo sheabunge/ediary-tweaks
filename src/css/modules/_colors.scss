@@ -17,7 +17,7 @@ $colors: (
 
 	white:  #fff,
 	silver: #ddd,
-	grey:   #aaa,
+	gray:   #aaa,
 	black:  #111
 );
 
@@ -26,10 +26,10 @@ $colors: (
 
 	$important: if( $important, ' !important', '' );
 
-	@each $colourName, $colourVal in $colors {
+	@each $color-name, $color-value in $colors {
 
-		.#{$theme}-#{$colourName} & {
-			#{$property}: $colourVal#{$important};
+		.#{$theme}-#{$color-name} & {
+			#{$property}: $color-value#{$important};
 		}
 	}
 }
