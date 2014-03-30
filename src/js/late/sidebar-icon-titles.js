@@ -1,10 +1,11 @@
-
 /**
  * Add titles to sidebar icons
  */
 
-document.getElementById( 'btn-add-task' )
-	.setAttribute( 'title', 'Add Task' );
+
+var addTask = document.getElementById( 'btn-add-task' );
+addTask.className = 'add-task'; // fix functionality
+addTask.setAttribute( 'title', 'Add Task' );
 
 document.querySelector( '.left-sidebar a[href="#content/school/toc"]' )
 	.setAttribute( 'title', 'Content Pages' );
