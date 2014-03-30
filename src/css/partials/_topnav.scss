@@ -10,6 +10,7 @@
 	// Hide back/forward buttons
 	.go-back-btn,
 	.go-forward-btn,
+	[href="#nav-week-next"],
 	img[src="images/diary/top-nav-home-separator.png"] {
 		display: none;
 	}
@@ -20,10 +21,10 @@
 	}
 
 	// Next week icons
-	[href="#nav-week-next"] {
+/* 	[href="#nav-week-next"] {
 		margin-right: 40px;
 		@include replace-icon($fa-var-forward);
-	}
+	} */
 
 	// Previous icon
 	.previous {
@@ -35,4 +36,10 @@
 		@include replace-icon($fa-var-arrow-right);
 	}
 
+}
+
+.ediary-tweaks-options::before {
+	@extend .#{$fa-css-prefix};
+	content: $fa-var-cog;
+	margin-right: 40px;
 }

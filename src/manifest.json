@@ -33,7 +33,9 @@
 		"js/early.min.map",
 
 		"js/late.js",
-		"js/late.min.map"
+		"js/late.min.map",
+
+		"html/options.html"
 	],
 	"options_page": "html/options.html"
 }
