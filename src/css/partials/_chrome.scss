@@ -1,13 +1,12 @@
-body,
 .navbar,
 .left-sidebar {
 	@include apply-theme(chrome, background, true);
-}
-
-.navbar,
-.left-sidebar {
 	position: fixed !important;
 	z-index: 100000;
+}
+
+.left-sidebar {
+	height: 100%;
 }
 
 .left-sidebar ul {
