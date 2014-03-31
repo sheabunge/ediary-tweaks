@@ -1,3 +1,10 @@
-var html = '<li><a href="' + chrome.extension.getURL('html/options.html') +
-	'" title="Options" class="ediary-tweaks-options" target="_blank"></a>';
-document.querySelector('a[href="#nav-week-next"]').parentNode.insertAdjacentHTML('afterend', html);
+var settingsLink = document.createElement('a');
+settingsLink.setAttribute('href', 'html/options.html');
+settingsLink.setAttribute('title', 'Options');
+settingsLink.setAttribute('target', '_blank');
+settingsLink.className = 'ediary-tweaks-options';
+
+var settingsButton = document.createElement('li');
+settingsButton.appendChild(settingsLink);
+
+document.querySelector('#top-nav > ul').insertBefore(settingsButton, document.querySelector('#top-nav .previous').parentNode);
